@@ -377,25 +377,75 @@
     grid-area: 1 / 1 / 4 / 2;
 }
 
-
+.brandingSection, .mainBtnsSB, .configSB {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
 .upperHD, .bottomHD,.sidebar {
   padding: 10px 20px;
 }
 .upperHD {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#bell {
+  margin-left: 100px;
 }
 
 .searchbarHD {
   height: 25px;
   width: 100%;
+  max-width: 500px;
   flex: 1;
   border-radius: 10px;
   background-color: #f0fdfa;
+  align-self: left;
 }
 
 .mainBtnSB, .configBtn {
+  display: flex;
+  align-items:flex-end;
   font-weight: 500;
   padding: 10px 0px;
+  color: white;
+} 
+
+.mainBtnsSB {
+  color: white;
+}
+
+.icon {
+  height: 20px;
+  align-self: center;
+  width: auto;
+  filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+
+}
+
+.icon.black {
+  filter: invert(0%) sepia(90%) saturate(7460%) hue-rotate(345deg) brightness(104%) contrast(110%);
+}
+
+.avatar {
+  max-height: 40px;
+  width: auto;
+  padding: 10px 10px 10px 20px; 
+  margin-right: 20px;
+  align-self: center;
+  border: thin solid rgb(197, 197, 197);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+  border-radius: 50%;
+}
+
+.avatar.upper {
+  max-height: 30px;
+  padding: 5px;
+  margin-right: 0px
+
 }
 
 .bottomHD {
@@ -409,7 +459,7 @@
 .mainContent {
   display: grid;
   grid: 0.5fr 9fr / 2fr 2fr 1fr;
-  padding: 20px;
+  padding: 20px 20px 50px;
   gap: 0px 30px;
   background-color: #f0fdfa;
 }
